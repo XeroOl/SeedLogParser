@@ -33,8 +33,8 @@ public class SeedLogParser {
 							} else if (line.matches(loc)) {
 								System.out.println(seed);
 								System.out.println(loc);
-								log.write(seed);
-								log.write(loc);
+								log.println(seed);
+								log.println(loc);
 							}
 						}
 						break;
@@ -53,7 +53,7 @@ public class SeedLogParser {
 						for (String[] s : outputlist) {
 							String output = Arrays.toString(s).replaceAll("[\\[\\],]", "");
 							System.out.println(output);
-							log.print(output);
+							log.println(output);
 						}
 					}
 					}
